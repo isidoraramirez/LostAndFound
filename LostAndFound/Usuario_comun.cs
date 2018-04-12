@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LostAndFound
 {
-    class Usuario_comun
+    class Usuario_comun: Usuario
     {
     }
 }

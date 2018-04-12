@@ -8,5 +8,7 @@ namespace LostAndFound
 {
     class Objeto
     {
+        int codigo;
+
     }
 }

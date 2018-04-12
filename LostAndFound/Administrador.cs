@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LostAndFound
 {
-    class Administrador
+    class Administrador: Usuario
     {
     }
 }

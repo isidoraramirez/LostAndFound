@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace LostAndFound
 {
-    class Usuario
+    abstract class Usuario
     {
         string rut;
         char contrasenia;
         string nombre_usuario;
         float calificacion;
         string mail;
-        //List<float> lista_calificaion;
 
         Usuario(string rut, char contrasenia, string nombre_usuario, float calificacion, string mail)
         {
@@ -22,7 +21,11 @@ namespace LostAndFound
             this.nombre_usuario = nombre_usuario;
             this.calificacion = calificacion;
             this.mail = mail;
-            List<float> lista_calificacion = new List<float>;
+            List<float> lista_calificacion = new List<float>();
+        }
+        public abstract void Registrarse()
+        {
+
         }
     }
 }
