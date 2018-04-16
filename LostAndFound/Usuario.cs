@@ -9,23 +9,20 @@ namespace LostAndFound
     abstract class Usuario
     {
         string rut;
-        char contrasenia;
+        string password;
         string nombre_usuario;
-        float calificacion;
         string mail;
 
-        Usuario(string rut, char contrasenia, string nombre_usuario, float calificacion, string mail)
-        {
-            this.rut = rut;
-            this.contrasenia = contrasenia;
-            this.nombre_usuario = nombre_usuario;
-            this.calificacion = calificacion;
-            this.mail = mail;
-            List<float> lista_calificacion = new List<float>();
-        }
-        public abstract void Registrarse()
+        public Usuario(string rut, string password, string nombre_usuario, string mail)
         {
 
+            this.rut = rut;
+            this.password = password;
+            this.nombre_usuario = nombre_usuario;
+            this.mail = mail;
         }
+        public string Rut { get => rut;}
+        public string Nombre_usuario { get => nombre_usuario; }
+        public string Mail { get => mail; }
     }
 }
